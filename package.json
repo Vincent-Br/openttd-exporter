@@ -1,0 +1,15 @@
+{
+  "name": "openttd-exporter",
+  "version": "1.0.0",
+  "description": "Prometheus exporter for OpenTTD servers. Connects via the admin port.",
+  "main": "src/index.cjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Vincent Brokx <vincent@vincentbrokx.nl> (https://vincentbrokx.nl)",
+  "license": "GPL-3.0-or-later",
+  "dependencies": {
+    "node-openttd-admin": "^0.2.4"
+  }
+}
