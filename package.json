@@ -10,6 +10,8 @@
   "author": "Vincent Brokx <vincent@vincentbrokx.nl> (https://vincentbrokx.nl)",
   "license": "GPL-3.0-or-later",
   "dependencies": {
-    "node-openttd-admin": "^0.2.4"
+    "express": "^4.21.0",
+    "node-openttd-admin": "^0.2.4",
+    "prom-client": "^15.1.3"
   }
 }
