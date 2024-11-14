@@ -6,6 +6,7 @@ const server = express();
 const register = prom.register;
 const metrics = require("./metrics.cjs");
 const { registerEventHandlers } = require("./update.cjs");
+const { connect } = require("./connection.cjs");
 
 prom.collectDefaultMetrics({ gcDurationBuckets: [0.001, 0.01, 0.1, 1, 2, 5] }); // Collect default metrics
 
@@ -22,6 +23,7 @@ server.listen(process.env.EXPORTER_PORT || 3990, () => {
     console.log(
         `Server listening on port ${process.env.EXPORTER_PORT}, metrics exposed on /metrics endpoint`
     );
+    connect();
 });
 
 module.exports = {
