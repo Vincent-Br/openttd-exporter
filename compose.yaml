@@ -1,0 +1,14 @@
+services:
+  ottd-exporter:
+    build:
+      context: .
+    environment:
+      NODE_ENV: production
+      # Change the values below
+      OTTD_HOST: host.docker.internal
+      OTTD_PORT: 3977
+      OTTD_PASSWORD: password
+      EXPORTER_PORT: 3990
+    ports:
+      - 3990:3990
+      - 3977:3977
